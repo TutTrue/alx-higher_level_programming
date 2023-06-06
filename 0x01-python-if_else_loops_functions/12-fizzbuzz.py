@@ -1,7 +1,8 @@
 #!/usr/bin/python3
 def fizzbuzz():
     """
-    For multiples of three print Fizz instead of the number and for multiples of five print Buzz
+    For multiples of three print Fizz instead of the number and
+    for multiples of five print Buzz.
     For numbers which are multiples of both three and five print FizzBuzz.
     """
     for i in range(1, 101):
