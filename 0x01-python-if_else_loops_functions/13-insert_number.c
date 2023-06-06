@@ -5,16 +5,22 @@
  * insert_node - insert node in a sorted way
  * @head: head of the list
  * @number: data of the list
+ * Return: pointer to the new node or NULL
  */
 listint_t *insert_node(listint_t **head, int number)
 {
 	listint_t *temp = malloc(sizeof(listint_t));
 	listint_t *cur;
 
-	if (!temp || !head)
+	if (!temp)
 		return (NULL);
 	cur = *head;
 	temp->n = number;
+	if (!cur)
+	{
+		cur = temp;
+		return (temp);
+	}
 	if (cur->n > number)
 	{
 		temp->next = cur;
