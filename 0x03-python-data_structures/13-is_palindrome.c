@@ -39,7 +39,7 @@ int is_palindrome(listint_t **head)
 		arr[i] = temp->n;
 		temp = temp->next;
 	}
-	for (i = 0, j = len - 1; i < len && j < i; i++)
+	for (i = 0, j = len - 1; i < len && j > i; i++)
 	{
 		if (arr[i] != arr[j--])
 			flag = 0;
