@@ -31,6 +31,8 @@ int is_palindrome(listint_t **head)
 	if (!*head)
 		return (flag);
 	len = listint_len(*head);
+	if (len % 2 != 0)
+		return (0);
 	arr = malloc(sizeof(int) * len);
 	if (!arr)
 		return (0);
