@@ -18,9 +18,9 @@ size_t listint_len(const listint_t *h)
 	return (counter);
 }
 /**
- * reverse_listint - reverse a list
+ * is_palindrome -  checks if a singly linked list is a palindrome
  * @head: head of the list
- * Return: pointer to the first node
+ * Return: 0 if it is not a palindrome, 1 if it is a palindrome
  */
 int is_palindrome(listint_t **head)
 {
@@ -31,6 +31,9 @@ int is_palindrome(listint_t **head)
 		return (flag);
 	len = listint_len(*head);
 	int *arr = malloc(sizeof(int) * len);
+
+	if (!arr)
+		return (0);
 	for (i = 0; i < len; i++)
 	{
 		arr[i] = temp->n;
