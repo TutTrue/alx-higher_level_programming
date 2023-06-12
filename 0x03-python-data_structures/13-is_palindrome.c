@@ -26,12 +26,11 @@ int is_palindrome(listint_t **head)
 {
 	int i, j, len, flag = 1;
 	listint_t *temp = *head;
-	int *arr;
+	int *arr[2000];
 
 	if (!*head)
 		return (flag);
 	len = listint_len(*head);
-	arr = malloc(sizeof(int) * len);
 	if (!arr)
 		return (2);
 	for (i = 0; i < len; i++)
