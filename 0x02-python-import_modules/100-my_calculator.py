@@ -7,16 +7,16 @@ if __name__ == "__main__":
         exit(1)
     if argv[2] == '+':
         print("{:d} {} {:d} = {:d}"
-              .format(argv[1], argv[2], argv[3], add(argv[1], argv[2])))
+              .format(argv[1], argv[2], argv[3], add(argv[1], argv[3])))
     elif argv[2] == '-':
         print("{:d} {} {:d} = {:d}"
-              .format(argv[1], argv[2], argv[3], sub(argv[1], argv[2])))
+              .format(argv[1], argv[2], argv[3], sub(argv[1], argv[3])))
     elif argv[2] == '*':
         print("{:d} {} {:d} = {:d}"
-              .format(argv[1], argv[2], argv[3], mul(argv[1], argv[2])))
+              .format(argv[1], argv[2], argv[3], mul(argv[1], argv[3])))
     elif argv[2] == '/':
         print("{:d} {} {:d} = {:d}"
-              .format(argv[1], argv[2], argv[3], div(argv[1], argv[2])))
+              .format(argv[1], argv[2], argv[3], div(argv[1], argv[3])))
     else:
         print("Unknown operator. Available operators: +, -, * and /")
         exit(1)
