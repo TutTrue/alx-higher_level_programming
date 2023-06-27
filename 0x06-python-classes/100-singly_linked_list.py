@@ -38,17 +38,18 @@ class Node:
             raise TypeError("next_node must be a Node object")
         self.__next_node = value
 
+
 class SinglyLinkedList:
     """Linked list"""
 
     def __init__(self):
-       """new linked list"""
-       self.__head = None
+        """new linked list"""
+        self.__head = None
 
     def sorted_insert(self, value):
         """insert in sorted way
         Args:
-           value: the value of the new node 
+            value: the value of the new node
         """
         node = Node(value)
         if self.__head is None:
