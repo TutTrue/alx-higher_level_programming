@@ -1,9 +1,15 @@
 #!/usr/bin/python3
+"""magic class"""
 import math
 
 
 class MagicClass:
+    """magic class"""
     def __init__(self, radius):
+        """init
+        Args:
+            radius: radius
+        """
         self.__radius = 0
 
         if type(radius) not in (int, float):
@@ -12,7 +18,9 @@ class MagicClass:
         self.__radius = radius
 
     def area(self):
+        """area"""
         return self.__radius ** 2 * math.pi
 
     def circumference(self):
+        """circumference"""
         return 2 * math.pi * self.__radius
