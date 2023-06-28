@@ -5,7 +5,7 @@ import math
 
 class MagicClass:
     """magic class"""
-    def __init__(self, radius):
+    def __init__(self, radius=0):
         """init
         Args:
             radius: radius
