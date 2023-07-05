@@ -37,5 +37,11 @@ class TestMaxInteger(unittest.TestCase):
         x = max_intger(li)
         self.assertEqual(x, None)
 
+    def test_one_element(self):
+        """unsorted test"""
+        li = [2]
+        x = max_intger(li)
+        self.assertEqual(x, 2)
+
 if __name__ == '__main__':
     unittest.main()
