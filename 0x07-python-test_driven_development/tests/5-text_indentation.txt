@@ -8,47 +8,44 @@ Import function from module:
 
 	>>> text_indentation = __import__('5-text_indentation').text_indentation
 
-basic example:
-	>>> text_indentation("Lorem ipsum dolor sit amet, consectetur adipiscing "
-    ... "elit. Quonam modo? Utrum igitur tibi litteram videor an totas paginas "
-    ... "commovere? Non autem hoc: igitur ne illud quidem. Fortasse id optimum, "
-    ... "sed ubi illud: Plus semper voluptatis? Teneo, inquit, finem illi videri "
-    ... "nihil dolere. Transfer idem ad modestiam vel temperantiam, quae est "
-    ... "moderatio cupiditatum rationi oboediens. Si id dicis, vicimus. Inde "
-    ... "sermone vario sex illa a Dipylo stadia confecimus. Sin aliud quid "
-    ... "voles, postea. Quae animi affectio suum cuique tribuens atque hanc, "
-    ... "quam dico. Utinam quidem dicerent alium alio beatiorem! Iam ruinas "
-    ... "videres") # doctest: +NORMALIZE_WHITESPACE
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+Input not string:
+    >>> text_indentation(123)
+    Traceback (most recent call last):
+    ...
+    TypeError: text must be a string
+
+Empty input:
+    >>> text_indentation('')
+    
+Text without periods, question marks, and colons:
+    >>> text_indentation('This text without periods - question marks - colons')
+    This text without periods - question marks - colons
+
+Text with periods, question marks, and colons:
+    >>> text_indentation('This is a sentence. This is another sentence? And here is a sentence with a colon:')
+    This is a sentence.
     <BLANKLINE>
-    Quonam modo?
+    This is another sentence?
     <BLANKLINE>
-    Utrum igitur tibi litteram videor an totas paginas commovere?
+    And here is a sentence with a colon:
     <BLANKLINE>
-    Non autem hoc:
+
+Text with leading/trailing spaces:
+    >>> text_indentation('  Leading and trailing spaces.  ')
+    Leading and trailing spaces.
     <BLANKLINE>
-    igitur ne illud quidem.
+
+Text with multiple lines:
+    >>> text_indentation('This is line 1.This is line 2?And this is line 3:')
+    This is line 1.
     <BLANKLINE>
-    Fortasse id optimum, sed ubi illud:
+    This is line 2?
     <BLANKLINE>
-    Plus semper voluptatis?
+    And this is line 3:
     <BLANKLINE>
-    Teneo, inquit, finem illi videri nihil dolere.
-    <BLANKLINE>
-    Transfer idem ad modestiam vel temperantiam, 
-    quae est moderatio cupiditatum rationi oboediens.
-    <BLANKLINE>
-    Si id dicis, vicimus.
-    <BLANKLINE>
-    Inde sermone vario sex illa a Dipylo stadia confecimus.
-    <BLANKLINE>
-    Sin aliud quid voles, postea.
-    <BLANKLINE>
-    Quae animi affectio suum cuique tribuens atque hanc, quam dico.
-    <BLANKLINE>
-    Utinam quidem dicerent alium alio beatiorem! Iam ruinas videres
 
 int instead of string:
 	>>> text_indentation(1)
 	Traceback (most recent call last):
 	TypeError: text must be a string
+The ``text_indentation`` function
