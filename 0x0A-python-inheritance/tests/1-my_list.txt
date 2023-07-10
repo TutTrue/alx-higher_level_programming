@@ -1,0 +1,4 @@
+1-my_list.txt
+==============
+import the module:
+>>> Mylist = __import__("1-my_list").Mylist
