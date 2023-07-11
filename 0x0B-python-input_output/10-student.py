@@ -16,13 +16,14 @@ class Student:
         return self.__dict__
 
     def to_json(self, attrs=None):
-        """Get a dictionary representation of the Student.
-        If attrs is a list of strings, represents only those attributes
-        included in the list.
-        Args:
-            attrs (list): (Optional) The attributes to represent.
-        """
-        if (type(attrs) == list and
-                all(type(ele) == str for ele in attrs)):
-            return {k: getattr(self, k) for k in attrs if hasattr(self, k)}
-        return self.__dict__
+        """class to json"""
+        attr_dict = self.__dict__
+        if attrs is None:
+            return attr_dict
+
+        new_dict = {}
+        for key in attrs:
+            value = attr_dict.get(key)
+            if value:
+                new_dict[key] = value
+        return new_dict
