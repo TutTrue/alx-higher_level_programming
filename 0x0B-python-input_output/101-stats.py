@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+"""print anything for this status code"""
 import sys
 
 
