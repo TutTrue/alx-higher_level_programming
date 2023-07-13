@@ -4,10 +4,10 @@
 
 #### Read or watch:
 
-* [args/kwargs](./rltoken/7gc6UzxSL81HcuAwklUbuQ)
-* [JSON encoder and decoder](./rltoken/rGVU9mt57rVURGnjK6n4_Q)
-* [unittest module](./rltoken/soictNXCPE18ASL3INoeew)
-* [Python test cheatsheet](./rltoken/uI9iskBCcNo5pc7j9Vy86A)
+* [args/kwargs](https://intranet.alxswe.com/rltoken/7gc6UzxSL81HcuAwklUbuQ)
+* [JSON encoder and decoder](rhttps://intranet.alxswe.com/ltoken/rGVU9mt57rVURGnjK6n4_Q)
+* [unittest module](https://intranet.alxswe.com/rltoken/soictNXCPE18ASL3INoeew)
+* [Python test cheatsheet](https://intranet.alxswe.com/rltoken/uI9iskBCcNo5pc7j9Vy86A)
 
 ## Learning Objectives
 
