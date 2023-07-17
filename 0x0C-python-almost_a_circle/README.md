@@ -43,4 +43,5 @@
 | 17. JSON string to dictionary | [models/base.py](./models/base.py) |
 | 18. Dictionary to Instance | [models/base.py](./models/base.py) |
 | 19. File to instances | [models/base.py](./models/base.py) |
-
+| 20. JSON ok, but CSV? | [models/](./models/) |
+| 21. Let's draw it | [models/base.py](./models/base.py) |
