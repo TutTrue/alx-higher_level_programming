@@ -44,4 +44,4 @@ class Square(Rectangle):
             'x': getattr(self, 'x'),
             'size': getattr(self, 'height'),
             'y': getattr(self, 'y')
-        }
+            }

@@ -60,9 +60,6 @@ class Base:
         try:
             with open(file_name, "r") as f:
                 content = cls.from_json_string(f.read())
-        except:
+        except Exception:
             return []
         return list(map(lambda obj: cls.create(**obj), content))
-        
-        
-        
