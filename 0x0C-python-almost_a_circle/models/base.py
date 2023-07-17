@@ -104,3 +104,8 @@ class Base:
                     row[key] = int(row[key])
                 data.append(row)
         return list(map(lambda obj: cls.create(**obj), data))
+
+    @staticmethod
+    def draw(list_rectangles, list_squares):
+        """draw function"""
+        pass
