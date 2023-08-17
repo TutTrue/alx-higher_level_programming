@@ -8,8 +8,3 @@ SELECT g.`name`
        ON t.`id` = s.`show_id`
        WHERE t.`title` = "Dexter"
  ORDER BY g.`name`;
-
-show tables;
-SELECT * FROM tv_genres;
-SELECT * FROM tv_show_genres;
-SELECT * FROM tv_shows;

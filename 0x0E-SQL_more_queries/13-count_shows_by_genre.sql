@@ -5,8 +5,3 @@ FROM tv_genres
     ON id = genre_id
 GROUP BY tv_genres.name
 ORDER BY number_of_shows DESC;
-
-show tables;
-SELECT * FROM tv_genres;
-SELECT * FROM tv_show_genres;
-SELECT * FROM tv_shows;
