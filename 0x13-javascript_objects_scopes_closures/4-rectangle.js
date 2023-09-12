@@ -8,12 +8,11 @@ class Rectangle {
   }
 
   print () {
-    for (let index = 0; index < this.height; index++)
-      console.log('X'.repeat(this.width));
+    for (let index = 0; index < this.height; index++) { console.log('X'.repeat(this.width)); }
   }
 
   rotate () {
-    let temp = this.width;
+    const temp = this.width;
     this.width = this.height;
     this.height = temp;
   }
