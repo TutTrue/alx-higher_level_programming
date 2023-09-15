@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+"""class definition of a State"""
 
 
 from sqlalchemy import Column, Integer, String
