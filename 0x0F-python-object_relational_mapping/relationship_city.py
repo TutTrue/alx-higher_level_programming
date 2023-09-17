@@ -10,6 +10,7 @@ class City(Base):
     cities table:
         id: primary key
         name: name of the city
+        state_id: id of State
     """
     __tablename__ = 'cities'
     id = Column(Integer, primary_key=True, nullable=False, autoincrement=True)

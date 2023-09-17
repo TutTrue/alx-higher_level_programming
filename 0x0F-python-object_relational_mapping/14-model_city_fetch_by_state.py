@@ -22,5 +22,4 @@ if __name__ == "__main__":
     for record in session.query(City, State)\
             .filter(City.state_id == State.id)\
             .order_by(City.id):
-        # (<City(1, San Francisco, 1)>, <State(1, California)>)
         print(f"{record[1].name}: ({record[0].id}) {record[0].name}")
