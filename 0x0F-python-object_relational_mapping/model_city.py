@@ -5,6 +5,7 @@
 from sqlalchemy import Column, ForeignKey, Integer, String
 from model_state import Base
 
+
 class City(Base):
     """
     cities table:
