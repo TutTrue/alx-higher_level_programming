@@ -9,4 +9,4 @@ if __name__ == "__main__":
     req = requests.get(url)
     res = req.json()
     for commit in res[:10]:
-        print(f'{commit.get("sha")}: {commit.get("login").get("name")}')
+        print(f'{commit.get("sha")}: {commit.get("commit").get("author").get("name")}')
