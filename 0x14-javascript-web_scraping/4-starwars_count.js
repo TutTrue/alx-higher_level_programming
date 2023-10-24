@@ -8,7 +8,7 @@ request.get(url, (err, res, body) => {
     console.log(err);
   }
   const data = JSON.parse(body);
-  const chars = data.results[0].characters[15];
+  const chars = data.results[0].characters.find(c => c.includes('18'));
   request.get(chars, (err, res, body) => {
     if (err) {
       console.log(err);
