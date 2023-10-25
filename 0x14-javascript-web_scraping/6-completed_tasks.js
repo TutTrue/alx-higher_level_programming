@@ -9,7 +9,9 @@ request.get(url, (err, res, body) => {
   } else {
     const obj = {};
     JSON.parse(body).map(todo => {
-      obj[todo.userId] = (obj[todo.userId] || 0) + (todo.completed ? 1 : 0);
+      if (todo.completed) {
+        obj[todo.userId] = (obj[todo.userId] || 0) + 1;
+      }
       return obj;
     });
     console.log(obj);
